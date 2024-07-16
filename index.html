@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Visit Form</h2>
+        <form id="visitorForm">
+            <label for="date">Date of Visit:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="personVisited">Person Visited:</label>
+            <input type="text" id="personVisited" name="personVisited" required>
+
+            <!-- New Fields -->
+            <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" name="customerName" required>
+
+            <label for="customerLocation">Location of Customer:</label>
+            <input type="text" id="customerLocation" name="customerLocation" required>
+
+            <label for="agendaDiscussed">Agenda Discussed:</label>
+            <input type="text" id="agendaDiscussed" name="agendaDiscussed" required>
+
+            <label for="outcomes">Outcomes/Solutions:</label>
+            <input type="text" id="outcomes" name="outcomes" required>
+
+            <!-- Action Plans Table -->
+            <div>
+                <h3>Action Plans</h3>
+                <table id="actionPlansTable">
+                    <thead>
+                        <tr>
+                            <th>Action Plans</th>
+                            <th>Responsibilities</th>
+                            <th>Target Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dynamic Rows Will Be Added Here -->
+                    </tbody>
+                </table>
+                <button type="button" onclick="addActionRow()">Add Action</button>
+            </div>
+
+            <label for="personMet">Person Met:</label>
+            <input type="text" id="personMet" name="personMet" required>
+
+            <label for="remarks">Remarks:</label>
+            <textarea id="remarks" name="remarks" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
