@@ -18,7 +18,7 @@ document.getElementById('visitorForm').addEventListener('submit', function(e) {
 
     console.log([...formData.entries()]); // Log the form data to the console
 
-    fetch('https://script.google.com/macros/s/AKfycbx_Z5DmJmxKXd5H-GZ_XC1BEtVyY_ldSPvZKo2Hte6MddVx9MEE-o-K7zqhHdWZhSvsvw/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbz9le5iUEJ2LPlguDVB0xJKFzFZoP7F0aYRpxSoKcVPrW0b64tln5zGNEbra-7prkcfgA/exec', {
         method: 'POST',
         body: formData
     })
@@ -47,8 +47,10 @@ function addActionRow() {
         <td>
             <select name="responsibility" required>
                 <option value="">Select</option>
+                <option value="Vikash">Vikash</option>
+                <option value="Aman">Aman</option>
                 <option value="Ishaan Sarine">Ishaan Sarine</option>
-                <option value="CEO">CEO</option>
+                <option value="President">Nagesh Marwaha</option>
                 <option value="Lalit Kapoor">Lalit Kapoor</option>
                 <option value="Adarsh Soni">Adarsh Soni</option>
                 <option value="Trilok Chand Bansal">Trilok Chand Bansal</option>
@@ -97,4 +99,3 @@ function removeRow(button) {
     const row = button.closest('tr');
     row.remove();
 }
-
